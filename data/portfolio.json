@@ -10,28 +10,24 @@
     },
     "summary": "Full-stack web developer with more than three years of experience building scalable and maintainable web applications using modern web technologies. Specializes in developing robust backend systems and intuitive frontend interfaces."
   },
-  "education": [
-    {
-      "institution": "Dagon University",
-      "degree": "BA 3rd year"
-    }
-  ],
-  "languages": [
-    {
-      "language": "Burmese",
-      "proficiency": "Native"
-    },
-    {
-      "language": "English",
-      "proficiency": "B1"
-    }
-  ],
+
   "technical_skills": {
     "frontend": ["React", "Next js", "Vue"],
     "backend": ["Node.js", "NestJS", "Laravel"],
     "databases": ["Postgres", "Mysql", "Mongodb"],
-    "cloud_devops": ["AWS Services", "Docker", "Docker Compose", "CI/CD with GitHub Actions", "Nginx/Apache"],
-    "architecture_practices": ["REST API Design", "Authentication & Authorization (JWT, RBAC)", "Caching & Performance Optimization", "Environment-based Configuration"]
+    "cloud_devops": [
+      "AWS Services",
+      "Docker",
+      "Docker Compose",
+      "CI/CD with GitHub Actions",
+      "Nginx/Apache"
+    ],
+    "architecture_practices": [
+      "REST API Design",
+      "Authentication & Authorization (JWT, RBAC)",
+      "Caching & Performance Optimization",
+      "Environment-based Configuration"
+    ]
   },
   "work_experience": [
     {

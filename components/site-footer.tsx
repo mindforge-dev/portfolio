@@ -8,7 +8,6 @@ export function SiteFooter() {
         <span>
           © {new Date().getFullYear()} {name}
         </span>
-        <span>Built with Next.js &amp; shadcn/ui</span>
       </div>
     </footer>
   );
