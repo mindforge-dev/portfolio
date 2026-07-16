@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { Hero } from "@/components/sections/hero";
 import { Skills } from "@/components/sections/skills";
+import { Projects } from "@/components/sections/projects";
 import { Experience } from "@/components/sections/experience";
 import { Contact } from "@/components/sections/contact";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
@@ -29,6 +30,7 @@ export default function Home() {
         <main className="flex-1">
           <Hero />
           <Skills />
+          <Projects />
           <Experience />
           <Contact />
         </main>

@@ -39,12 +39,32 @@ export interface WorkExperience {
   responsibilities: string[];
 }
 
-export interface Portfolio {
-  personal_information: PersonalInformation;
-  education: Education[];
-  languages: Language[];
-  technical_skills: TechnicalSkills;
-  work_experience: WorkExperience[];
+export interface ProjectTechStack {
+  frontend?: string[];
+  backend?: string[];
+  infrastructure?: string[];
 }
 
-export const portfolio = portfolioData as Portfolio;
+export interface Project {
+  id: string;
+  title: string;
+  summary: string;
+  description: string;
+  image: string;
+  live_url: string;
+  github_url: string;
+  tags: string[];
+  tech_stack: ProjectTechStack;
+  features: string[];
+}
+
+export interface Portfolio {
+  personal_information: PersonalInformation;
+  education?: Education[];
+  languages?: Language[];
+  technical_skills: TechnicalSkills;
+  work_experience: WorkExperience[];
+  projects: Project[];
+}
+
+export const portfolio = portfolioData as unknown as Portfolio;

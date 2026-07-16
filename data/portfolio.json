@@ -84,5 +84,54 @@
         "Deployed and maintained backend services using Docker and cloud infrastructure."
       ]
     }
+  ],
+  "projects": [
+    {
+      "id": "hotel-booking",
+      "title": "Hotel Booking System",
+      "summary": "A high-performance full-stack hotel booking platform featuring a customer booking interface, admin dashboard, and real-time WebSocket notifications.",
+      "description": "A comprehensive hotel search, reservation, and management platform. It leverages React Query for optimized client-side state and caching, and includes an advanced real-time notification system backed by an AWS CDK WebSocket infrastructure (API Gateway WebSocket API, Lambda, and DynamoDB).",
+      "image": "/hotel_booking.png",
+      "live_url": "https://hotel-booking.zcoder.space/",
+      "github_url": "https://github.com/mindforge-dev/hotel_booking",
+      "tags": ["Next.js", "React 19", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "NextAuth.js", "AWS CDK", "WebSockets"],
+      "tech_stack": {
+        "frontend": ["Next.js 15", "React 19", "Tailwind CSS", "Framer Motion", "Radix UI", "TanStack React Query", "React Hook Form", "Zod", "React Leaflet"],
+        "backend": ["Next.js API Routes", "Prisma ORM", "PostgreSQL", "NextAuth.js", "bcryptjs"],
+        "infrastructure": ["AWS CDK", "API Gateway WebSocket API", "AWS Lambda", "Amazon DynamoDB", "Docker", "GitHub Actions (CI/CD)", "Lightsail VPS", "pm2"]
+      },
+      "features": [
+        "Hotel search and multi-criteria filtering (location, rating, country, etc.)",
+        "Interactive map integration with React Leaflet for geographical hotel tracking",
+        "Complete guest booking lifecycle with room selection and check-in/out scheduling",
+        "Fully-featured Admin Dashboard for managing hotels, rooms, and bookings",
+        "Real-time alerts & badges using AWS WebSocket connections synchronized via React Query cache",
+        "Secure credential-based authentication and role-based route guard middleware",
+        "Automated CI/CD pipelines deploying to VPS with database migration and pm2 reloads"
+      ]
+    },
+    {
+      "id": "loan-management",
+      "title": "Loan Management System with RBAC",
+      "summary": "A secure, enterprise-grade loan tracking and management system utilizing granular role-based access controls (RBAC).",
+      "description": "An administrative platform designed for managing, approving, and auditing loans. It incorporates a strict Spatie-style Role-Based Access Control (RBAC) model with custom permission checks, built on top of a Node.js/Express backend and a responsive React frontend featuring advanced table rendering and data mutation hooks.",
+      "image": "/loan_management.png",
+      "live_url": "https://loanmanagement.zcoder.space/",
+      "github_url": "https://github.com/mindforge-dev/loanMangement",
+      "tags": ["React", "TypeScript", "Node.js", "Express", "TypeORM", "PostgreSQL", "RBAC", "JWT"],
+      "tech_stack": {
+        "frontend": ["React", "Vite", "TypeScript", "Tailwind CSS", "TanStack Table", "TanStack React Query"],
+        "backend": ["Node.js", "Express", "TypeScript", "TypeORM", "PostgreSQL", "Zod", "JWT"]
+      },
+      "features": [
+        "Granular Role-Based Access Control (RBAC) protecting UI elements and API routes",
+        "Spatie-style checkPermissions middleware implementing module-specific permissions (e.g. read, write, approve)",
+        "Dynamic loan application, verification, approval, and disbursement workflows",
+        "Advanced data visualization and filtering with TanStack Table integration",
+        "Optimized server state synchronization using TanStack React Query",
+        "Robust input schema validation with Zod and secure JWT authentication tokens",
+        "Relational database design managed cleanly with TypeORM schemas and migrations"
+      ]
+    }
   ]
 }

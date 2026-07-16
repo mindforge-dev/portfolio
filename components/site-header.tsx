@@ -2,8 +2,8 @@ import { portfolio } from "@/lib/portfolio";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const navItems = [
-  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ];
