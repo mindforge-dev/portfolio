@@ -126,7 +126,7 @@ export function Projects() {
           {/* Close Backdrop click */}
           <div className="absolute inset-0" onClick={() => setSelectedProject(null)} />
           
-          <div className="relative w-full max-w-4xl bg-card border border-border rounded-xl shadow-2xl overflow-hidden flex flex-col md:flex-row max-h-[85vh] animate-scale-up">
+          <div className="relative w-full max-w-4xl bg-card border border-border rounded-xl shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row max-h-[90vh] md:max-h-[85vh] animate-scale-up">
             {/* Close Button */}
             <button
               onClick={() => setSelectedProject(null)}
@@ -174,7 +174,7 @@ export function Projects() {
             </div>
 
             {/* Right Column: Interactive Details */}
-            <div className="w-full md:w-7/12 flex flex-col overflow-hidden">
+            <div className="w-full md:w-7/12 flex flex-col md:overflow-hidden">
               {/* Modal Header */}
               <div className="p-6 pb-4 border-b border-border/40">
                 <h3 className="font-heading text-xl font-bold tracking-tight mb-2">
@@ -210,7 +210,7 @@ export function Projects() {
               </div>
 
               {/* Scrollable Tab Contents */}
-              <div className="flex-1 overflow-y-auto p-6 min-h-[250px] max-h-[40vh] md:max-h-[50vh]">
+              <div className="flex-1 p-6 md:overflow-y-auto md:min-h-[250px] md:max-h-[50vh]">
                 {activeTab === "features" && (
                   <ul className="flex flex-col gap-3">
                     {selectedProject.features.map((feature, idx) => (
